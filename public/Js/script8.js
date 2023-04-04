@@ -1,4 +1,3 @@
-
 function loadExcuse(){
     var request = new XMLHttpRequest();
     var url = "https://excuser-three.vercel.app/v1/excuse";
@@ -10,9 +9,4 @@ function loadExcuse(){
         parra.textContent = `Categoria: ${obj.category} - ${obj.excuse}`;
     }
     request.send();
-
-    if (request.status !== 200) {
-        callErrorLogger("loadExcuse", "Error al cargar la lista de excusas");
-        return;
-    }
 }

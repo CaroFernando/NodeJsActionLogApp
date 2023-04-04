@@ -2,41 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Demostracion de Apis</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="Js/apiLogger.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable=no, maximun-scale=1.0, minimun-scale=1.0>  
+  <link href="CSS/Estilos.css" rel="stylesheet">
+  <link href="CSS/bootstrap2.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/eaba22b813.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,300&display=swap" rel="stylesheet"> 
   
+  <title>Demostracion de Apis</title>
 </head>
 <body>
-  <script>
-    // on load of the page call the logger
-    window.onload = function(){
-      callLogger("index Loaded", "Index page loaded");
-    }
-  </script>
+  <div class="container-fluid navbar navbar-light" style="background-color: #e3f2fd;" fixed-top> <!--NAVBAR PARA LA PAGINA WEB-->
+    <nav class="navbar navbar-expand-lg container">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item dropdown show">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            API's
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="page1.html">Imagenes de perros</a>
+            <a class="dropdown-item" href="page2.html">Datos de gatos</a>
+            <a class="dropdown-item" href="page3.html">Lista de empleados</a>
+            <a class="dropdown-item" href="page4.html">Noticias</a>
+            <a class="dropdown-item" href="page5.html">Frases de anime</a>
+            <a class="dropdown-item" href="page6.html">Emoji random</a>
+            <a class="dropdown-item" href="page7.html">Frases corporativas</a>
+            <a class="dropdown-item" href="page8.html">Excusas</a>
+            <a class="dropdown-item" href="page9.html">Datos inutiles</a>
+            <a class="dropdown-item" href="page10.html">Memes</a>
+          </div>
+        </li>
+      </ul>
+      </div>
+    </nav>
+  </div> <!--DIV DEL NAVBAR-->
+
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <h1 class="text-center">Demostracion de Apis</h1>
         <div class="list-container">
-          <a href="page1.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'imagenes perros')">Imagenes de perros</a>
-          <a href="page2.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'datos de gatos')">Datos de gatos</a>
-          <a href="page3.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'lista empleados')">Lista de empleados</a>
-          <a href="page4.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'noticias')">Noticias</a>
-          <a href="page5.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'frases de anime')">Frases de anime</a>
-          <a href="page6.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'emoji random')">Emoji random</a>
-          <a href="page7.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'frases corporativas')">Frases corporativas</a>
-          <a href="page8.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'excusas')">Excusas</a>
-          <a href="page9.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'datos inutiles')">Datos inutiles</a>
-          <a href="page10.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'memes')">Memes</a>
+          <a href="page1.html" class="btn btn-primary btn-lg btn-block">Imagenes de perros</a>
+          <a href="page2.html" class="btn btn-primary btn-lg btn-block">Datos de gatos</a>
+          <a href="page3.html" class="btn btn-primary btn-lg btn-block">Lista de empleados</a>
+          <a href="page4.html" class="btn btn-primary btn-lg btn-block">Noticias</a>
+          <a href="page5.html" class="btn btn-primary btn-lg btn-block">Frases de anime</a>
+          <a href="page6.html" class="btn btn-primary btn-lg btn-block">Emoji random</a>
+          <a href="page7.html" class="btn btn-primary btn-lg btn-block">Frases corporativas</a>
+          <a href="page8.html" class="btn btn-primary btn-lg btn-block">Excusas</a>
+          <a href="page9.html" class="btn btn-primary btn-lg btn-block">Datos inutiles</a>
+          <a href="page10.html" class="btn btn-primary btn-lg btn-block">Memes</a>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="Js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
-
-

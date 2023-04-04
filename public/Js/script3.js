@@ -1,4 +1,3 @@
-
 function loadEmpleados(){
     var request = new XMLHttpRequest();
     var url = "https://dummy.restapiexample.com/api/v1/employees";
@@ -14,10 +13,5 @@ function loadEmpleados(){
             lista.appendChild(li);
         });
     }
-    request.send();
-
-    if (request.status !== 200) {
-        callErrorLogger("loadEmpleados", "Error al cargar la lista de empleados");
-        return;
-    }
+    request.send()
 }

@@ -1,4 +1,3 @@
-
 function loadUseless(){
     var request = new XMLHttpRequest();
     var url = "https://uselessfacts.jsph.pl/api/v2/facts/random";
@@ -9,9 +8,4 @@ function loadUseless(){
         parra.textContent = obj.text;
     }
     request.send();
-
-    if (request.status !== 200) {
-        callErrorLogger("loadUseless", "Error al cargar la lista de datos inútiles");
-        return;
-    }
 }

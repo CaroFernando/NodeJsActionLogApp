@@ -1,4 +1,3 @@
-
 function loadListGato(){
     var request = new XMLHttpRequest();
     var url = "https://catfact.ninja/fact?max_length=200";
@@ -9,9 +8,4 @@ function loadListGato(){
         parra.textContent = obj.fact;
     }
     request.send();
-
-    if (request.status !== 200) {
-        callErrorLogger("loadListGato", "Error al cargar la lista de gatos");
-        return;
-    }
 }

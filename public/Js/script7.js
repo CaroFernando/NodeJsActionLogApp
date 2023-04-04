@@ -1,4 +1,3 @@
-
 function loadCorporate(){
     var request = new XMLHttpRequest();
     var url = "https://corporatebs-generator.sameerkumar.website/";
@@ -9,9 +8,4 @@ function loadCorporate(){
         parra.textContent = obj.phrase;
     }
     request.send();
-
-    if (request.status !== 200) {
-        callErrorLogger("loadCorporate", "Error al cargar la lista de corporativos");
-        return;
-    }
 }

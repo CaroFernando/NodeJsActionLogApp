@@ -1,4 +1,3 @@
-
 function loadListNoticias(){
     var request = new XMLHttpRequest();
     var input = document.getElementById("searchbox4");
@@ -24,9 +23,4 @@ function loadListNoticias(){
         imgn.setAttribute("src", element.urlToImage);
     }
     request.send();
-
-    if (request.status !== 200) {
-        callErrorLogger("loadListNoticias", "Error al cargar la lista de noticias");
-        return;
-    }
 }

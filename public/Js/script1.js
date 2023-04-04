@@ -8,9 +8,12 @@ function loadListPerro(){
         img.setAttribute("src", obj.message);
     }
     request.send();
+    const fs = require('fs');
 
-    if (request.status !== 200) {
-        callErrorLogger("loadListPerro", "Error al cargar la lista de perros");
-        return;
-    }
+    const data = 'This is the data that will be written to the file.';
+
+    fs.writeFile('example.txt', data, (err) => {
+    if (err) throw err;
+    console.log('Data has been written to the file successfully!');
+    });
 }

@@ -1,4 +1,3 @@
-
 function loadAnimeQuote(){
     var request = new XMLHttpRequest();
     var url = "https://animechan.vercel.app/api/random";
@@ -9,9 +8,4 @@ function loadAnimeQuote(){
         parra.textContent = `"${obj.quote}" - ${obj.character} (${obj.anime})`;
     }
     request.send();
-
-    if (request.status !== 200) {
-        callErrorLogger("loadAnimeQuote", "Error al cargar la lista de frases de anime");
-        return;
-    }
 }
