@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../CSS/bootstrap2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Estilos.css">
+    <script src="Js/apiLogger.js"></script>
+    <title>Api de noticias</title> 
+</head>
+<body>
+      <main role="main" class="container">
+        <h1> Api de noticias </h1>
+        <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="button-addon2" id="searchbox4">
+        <button class="btn btn-primary btn-lg btn-block" onclick="loadListNoticias(); callLogger('api button clicked','noticias')">Nueva noticia</button>
+        <a id="FinalLink0" href="#">
+            <div class="card" style="justify-content: center; align-items: center;">
+              <img id="FinalImg0" class="center-fit" src="" style="max-width: 500px; max-height: 500px;">
+              <h4 id="FinalTitulo0"  style="text-align: center;"></h4>
+              <p id="FinalTexto0"  style="text-align: center;"></p>
+            </div>
+        </a>
+
+      </main>
+    <script scr="../../Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/script4.js"></script>
+</body>
+</html>

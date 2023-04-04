@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demostracion de Apis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="Js/apiLogger.js"></script>
+  
+</head>
+<body>
+  <script>
+    // on load of the page call the logger
+    window.onload = function(){
+      callLogger("index Loaded", "Index page loaded");
+    }
+  </script>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Demostracion de Apis</h1>
+        <div class="list-container">
+          <a href="page1.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'imagenes perros')">Imagenes de perros</a>
+          <a href="page2.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'datos de gatos')">Datos de gatos</a>
+          <a href="page3.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'lista empleados')">Lista de empleados</a>
+          <a href="page4.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'noticias')">Noticias</a>
+          <a href="page5.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'frases de anime')">Frases de anime</a>
+          <a href="page6.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'emoji random')">Emoji random</a>
+          <a href="page7.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'frases corporativas')">Frases corporativas</a>
+          <a href="page8.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'excusas')">Excusas</a>
+          <a href="page9.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'datos inutiles')">Datos inutiles</a>
+          <a href="page10.html" class="btn btn-primary btn-lg btn-block" onclick="callLogger('button pressed', 'memes')">Memes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+

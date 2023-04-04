@@ -1,0 +1,151 @@
+.titulo{
+    padding: 2rem;
+}
+.texto{
+    font-size: large;
+}
+.container-fluid{
+    background-color: rgb(211, 211, 211);
+}
+.main-content{
+    height: 100vh;
+    margin-bottom: 125px;
+}
+#PracticesRow{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 575px;
+}
+.languagetable {
+    border-collapse: collapse;
+}
+.languagetable__td{
+    border: 2px solid rgb(255, 255, 255);
+    text-align: left;
+    padding: 1rem;
+}
+.languagetable__th{
+    border: 2px solid rgb(255, 255, 255);
+    text-align: left;
+    padding: 1rem;
+    background-color: rgb(145, 202, 255);
+}
+.footer {
+    background-color: #f3f3f379;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    height: 125px;
+    margin-top: -125px;
+}
+
+.practice10Box1{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 200px;
+    border: 10px;
+    outline: 5px;
+    border-style: dotted;
+    background-color: blue;
+}
+.practice10Box2{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 200px;
+    border: 10px;
+    outline: 5px;
+    background-color: blueviolet;
+}
+.practice10img-box{
+    width: 98%;
+    margin: 5em auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.practice10img{
+    border: 5px solid blue;
+    outline: 5px solid blue;
+    outline-offset: -45px;
+}
+.practice10text{
+    position: absolute;
+    color: blue;
+    font-size: 3em;
+}
+.practice11box1, .practice11box2{
+    width: 250px;
+    height: 250px;
+    margin: 1em auto;
+    font-size: 2.5em;
+    text-align: center;
+}
+.practice11box1{
+    background-color: cadetblue;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    right: 30px;
+    bottom: 60px;
+}
+.practice11box2{
+    background-color: darkolivegreen;
+}
+.practice12container{
+    border: 3px black solid;
+    width: 500px;
+    height: 500px;
+    margin: 2em auto;
+    position: relative;
+}
+.practice12box1, .practice12box2, .practice12box3, .practice12box4, .practice12box5{
+    width: 50px;
+    height: 50px;
+    border: solid 5px;
+    position: absolute;
+}
+.practice12box1{
+    border-color: red;
+    top: 0;
+    left: 0;
+}
+.practice12box2{
+    border-color: blue;
+    bottom: 0;
+    left: 0;
+}
+.practice12box3{
+    border-color: green;
+    top: 0;
+    right: 0;
+}
+.practice12box4{
+    border-color: cyan;
+    bottom: 0;
+    right: 0;
+}
+.practice12box5{
+    border-color: orange;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.scaleto10{
+    max-width: 20%;
+    height: auto;
+    margin: auto;
+}
+.btn-custom {
+    background-color: blue;
+    color: white;
+    margin-bottom: 10px;
+}
+  .btn-custom:last-child {
+    margin-bottom: 0;
+}
+  .list-container {
+    padding: 30px;
+}
